@@ -1,12 +1,30 @@
 public class MainController {
-    public static void main(String[] args) {
-        for(int i = 0; i < 5; i++){
-            System.out.println("Wert von i: " + i);
-            if(i == 3){
-                System.out.println("Holdriho!");
-            }
+
+    private static int end;
+    private static int start;
+
+    public static boolean printSomeNumbers(){
+        for(int i = start; i <= end; i++){
+            System.out.println(i);
         }
+        return false;
     }
-}sdfsdfsdf
+
+
+    public static void main(String[] args) {
+        System.out.println(printSomeNumbers());
+    }
+
+    public static int sumUp(int start, int end) {
+        int a = 0;
+        int i;
+        for (i = start; i <= end; i++) {
+            a += i;
+        }
+        return a;
+    }
+}
+
+
 
 
