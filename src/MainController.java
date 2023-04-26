@@ -1,6 +1,5 @@
 public class MainController {
     public static void main(String[] args) {
-        System.out.println(rectangleStars(10, 5));
 
     }
 
@@ -45,13 +44,25 @@ public class MainController {
         return sum;
     }
 
-    public static int rectangleStars(int width, int height) {
+    public static void rectangleStars(int width, int height) {
         for (int i = 0; i < height; i++) {
-            for (int j = 0; j < width*height; i++) {
+            for (int j = 0; j < width; i++) {
                 System.out.print("*");
             }
+            System.out.println();
         }
-        return width;
+    }
+
+    public static boolean rectangleStarsSave(int width, int height) {
+        if (width && height > 0) {
+            for (int i = 0; i < height; i++) {
+                for (int j = 0; j < width; i++) {
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
+        }
+        return false;
     }
 }
 
